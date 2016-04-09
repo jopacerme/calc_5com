@@ -5,11 +5,16 @@
 function vaciar () {
   document.getElementById("n1").value = "";
 }
+
+function sqrt(){
+	var num = document.getElementById("n1");
+	num.value= Math.sqrt(num.value);
+}
 </script>
 </head>
 <body>
   Número:
   <input type="text" id="n1" onclick="vaciar()"><p>
-
+  <button onclick="sqrt()"> sqrt(x)</button>
 </body>
 </html>
